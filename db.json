@@ -1,0 +1,125 @@
+{
+  "products": [
+    {
+      "id": 3,
+      "name": "Áo mùa thu",
+      "img": "https://i-ione.vnecdn.net/2021/09/07/7-9-sang-2-jpeg-5111-1630990484.jpg",
+      "price": "23000",
+      "desc": "Nguyễn Thị Hồng Nhung",
+      "quantity": "8",
+      "slug": "ôi cuộc đời :(((((("
+    },
+    {
+      "id": 4,
+      "name": "Áo mùa thu",
+      "img": "https://i-ione.vnecdn.net/2021/09/07/7-9-sang-2-jpeg-5111-1630990484.jpg",
+      "price": "230004",
+      "desc": "Nguyễn Thị Hồng Nhung",
+      "quantity": "8",
+      "slug": "ôi cuộc đời :(((((("
+    },
+    {
+      "name": "Áo mùa thu",
+      "img": "https://cf.shopee.vn/file/8bd57cda68fc7a4a2076feaae894b3fe",
+      "price": "23000",
+      "desc": "nguyen van dattt",
+      "quantity": "8",
+      "slug": "ôi cuộc đời :((((((",
+      "id": 6
+    },
+    {
+      "name": "Áo mùa thu",
+      "img": "https://cf.shopee.vn/file/8bd57cda68fc7a4a2076feaae894b3fe",
+      "price": "23000",
+      "desc": "nguyen van dattt",
+      "quantity": "8",
+      "slug": "ôi cuộc đời :((((((",
+      "id": 7
+    },
+    {
+      "name": "Áo mùa thu",
+      "img": "https://cf.shopee.vn/file/8bd57cda68fc7a4a2076feaae894b3fe",
+      "price": "23000",
+      "desc": "nguyen van dattt",
+      "quantity": "8",
+      "slug": "ôi cuộc đời :((((((",
+      "id": 8
+    },
+    {
+      "name": "Áo mùa thu",
+      "img": "https://cf.shopee.vn/file/8bd57cda68fc7a4a2076feaae894b3fe",
+      "price": "23000",
+      "desc": "nguyen van dattt",
+      "quantity": "8",
+      "slug": "ôi cuộc đời :((((((",
+      "id": 9
+    },
+    {
+      "name": "Áo mùa thu",
+      "img": "https://cf.shopee.vn/file/8bd57cda68fc7a4a2076feaae894b3fe",
+      "price": "23000",
+      "desc": "nguyen van dattt",
+      "quantity": "8",
+      "slug": "ôi cuộc đời :((((((",
+      "id": 10
+    },
+    {
+      "name": "Áo mùa thu",
+      "img": "https://cf.shopee.vn/file/8bd57cda68fc7a4a2076feaae894b3fe",
+      "price": "23000",
+      "desc": "nguyen van dattt",
+      "quantity": "8",
+      "slug": "ôi cuộc đời :((((((",
+      "id": 11
+    },
+    {
+      "name": "Áo mùa thu",
+      "img": "https://cf.shopee.vn/file/8bd57cda68fc7a4a2076feaae894b3fe",
+      "price": "23000",
+      "desc": "nguyen van dattt",
+      "quantity": "8",
+      "slug": "ôi cuộc đời :((((((",
+      "id": 12
+    },
+    {
+      "name": "Áo mùa thu",
+      "img": "https://cf.shopee.vn/file/8bd57cda68fc7a4a2076feaae894b3fe",
+      "price": "23000",
+      "desc": "nguyen van dattt",
+      "quantity": "8",
+      "slug": "ôi cuộc đời :((((((",
+      "id": 13
+    },
+    {
+      "name": "Áo mùa thu",
+      "img": "https://cf.shopee.vn/file/8bd57cda68fc7a4a2076feaae894b3fe",
+      "price": "23000",
+      "desc": "nguyen van dattt",
+      "quantity": "8",
+      "slug": "ôi cuộc đời :((((((",
+      "id": 14
+    }
+  ],
+  "users": [
+    {
+      "email": "vandat@gmail.com",
+      "password": "$2a$10$bSh7fnVXq9G5yZr49birS.k5FCEeXwfHkgz3.puA4..WdpkrFIlhq",
+      "id": 1
+    },
+    {
+      "email": "datnvph13011@fpt.edu.vn",
+      "password": "$2a$10$N0dwWMd1/.7PU6j4OlbFte3SoLwKbUciPAaPnBgEPNEFTDB4NVcru",
+      "id": 2
+    }
+  ],
+  "categorys": [
+    {
+      "id": 1,
+      "name": "Danh mục A"
+    },
+    {
+      "id": 1,
+      "name": "Danh mục B"
+    }
+  ]
+}
