@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import UploadImage from "./UploadImage";
 import { ToastContainer, toast } from "react-toastify";
+import ShowCategory from "../show/ShowCategory";
 
 
 const AddProduct = (props) => {
@@ -54,7 +55,7 @@ const AddProduct = (props) => {
                     </div>
                     <select className="form-control" {...register("desc")}>
                         <option style={{ color: '#533a3a' }} value="category-a">Danh muc A</option>
-                        <option value="category-b">Danh muc B</option>
+                        {/* < ShowCategory data={}/> */}
                     </select>
                     {/* <input {...register("desc")} type="text" id="desc" className="form-control" placeholder="Danh mục" aria-label="Username" required="required" aria-describedby="basic-addon1"></input> */}
                 </div>

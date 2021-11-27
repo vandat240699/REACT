@@ -7,17 +7,17 @@ import { ToastContainer, toast } from "react-toastify";
 
 const EditProduct = (props) => {
 
-    const onSubmit = async (data) => {
+    // const onSubmit = async (data) => {
 
-        await UploadImage(data.img[0]).then((response) => {
-            data.img = response.url;
-        });
-        props.onUpdate({ id, ...data });
-        toast.success("Sửa thành công !", {
-            onClose: () => navigate("/admin/product/", { replace: true }),
-            autoClose: 500
-        });
-    };
+    //     await UploadImage(data.img[0]).then((response) => {
+    //         data.img = response.url;
+    //     });
+    //     props.onUpdate({ id, ...data });
+    //     toast.success("Sửa thành công !", {
+    //         onClose: () => navigate("/admin/product/", { replace: true }),
+    //         autoClose: 500
+    //     });
+    // };
 
 
     const {
@@ -38,9 +38,9 @@ const EditProduct = (props) => {
         });
     }, [id, reset]);
 
-    // const onSubmit = (data) => {
-    //     props.onUpdate({ id, ...data });
-    // };
+    const onSubmit = (data) => {
+        props.onUpdate({ id, ...data });
+    };
 
     const EditProductForm = () => {
         return (
@@ -58,7 +58,7 @@ const EditProduct = (props) => {
                     <div className="input-group-prepend">
                         <span className="input-group-text" id="basic-addon1">Ảnh sản phẩm</span>
                     </div>
-                    <input defaultValue={product.img} {...register("img")} type="file" id="image" className="form-control" required="required" placeholder="Image" aria-label="Username" aria-describedby="basic-addon1"></input>
+                    <input defaultValue={product.img} {...register("img")} type="text" id="image" className="form-control" required="required" placeholder="Image" aria-label="Username" aria-describedby="basic-addon1"></input>
                 </div>
                 <div className="input-group mb-3" style={{ width: "60%", margin: "auto" }}>
                     <div className="input-group-prepend">
