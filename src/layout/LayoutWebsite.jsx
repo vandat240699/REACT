@@ -5,7 +5,7 @@ export default function LayoutWebsite() {
     <div >
       <ul className="layoutwebsite" style={{display: 'flex'}}>
         <li style={{listStyleType: 'none', marginLeft: 40}}>
-          <Link style={{textDecoration: 'none'}}  to="/">TRANG CHỦ</Link>
+          <Link style={{textDecoration: 'none'}}  to="/product">TRANG CHỦ</Link>
         </li>
         <li style={{listStyleType: 'none', marginLeft: 40}}>
           <Link style={{textDecoration: 'none'}}  to="/product">PRODUCT</Link>

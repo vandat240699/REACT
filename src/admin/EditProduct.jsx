@@ -4,6 +4,10 @@ import { useNavigate, useParams } from "react-router-dom";
 import { read } from "../api/productAPI";
 import UploadImage from "./UploadImage";
 import { ToastContainer, toast } from "react-toastify";
+import ShowCategory from "../show/ShowCategory";
+import { listCategory } from "../api/categoryAPI";
+
+
 
 const EditProduct = (props) => {
 
@@ -42,6 +46,11 @@ const EditProduct = (props) => {
         props.onUpdate({ id, ...data });
     };
 
+    const [cate, setCate] = useState([]);
+    useEffect(() => {
+        listCategory().then(res => setCate(res.data))
+    }, [])
+
     const EditProductForm = () => {
         return (
 
@@ -68,9 +77,11 @@ const EditProduct = (props) => {
                 </div>
                 <div className="input-group mb-3" style={{ width: "60%", margin: "auto" }}>
                     <div className="input-group-prepend">
-                        <span className="input-group-text" id="basic-addon1">Desc</span>
+                        <span className="input-group-text" id="basic-addon1">Danh mục</span>
                     </div>
-                    <input defaultValue={product.desc} {...register("desc")} type="text" id="desc" className="form-control" required="required" placeholder="Desc" aria-label="Username" aria-describedby="basic-addon1"></input>
+                    <select className="form-control" {...register("desc")}>
+                        < ShowCategory data={cate}/>
+                    </select>
                 </div>
                 <div className="input-group mb-3" style={{ width: "60%", margin: "auto" }}>
                     <div className="input-group-prepend">

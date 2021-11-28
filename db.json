@@ -4,8 +4,8 @@
       "id": 3,
       "name": "Áo mùa thu",
       "img": "https://i-ione.vnecdn.net/2021/09/07/7-9-sang-2-jpeg-5111-1630990484.jpg",
-      "price": "23000",
-      "desc": "Nguyễn Thị Hồng Nhung",
+      "price": "23000000",
+      "desc": "1",
       "quantity": "8",
       "slug": "ôi cuộc đời :(((((("
     },
@@ -55,40 +55,49 @@
       "id": 9
     },
     {
+      "id": 10,
       "name": "Áo mùa thu",
       "img": "https://cf.shopee.vn/file/8bd57cda68fc7a4a2076feaae894b3fe",
       "price": "23000",
-      "desc": "nguyen van dattt",
+      "desc": "1",
       "quantity": "8",
-      "slug": "ôi cuộc đời :((((((",
-      "id": 10
+      "slug": "ôi cuộc đời :(((((("
     },
     {
+      "id": 11,
       "name": "Áo mùa thu",
       "img": "https://cf.shopee.vn/file/8bd57cda68fc7a4a2076feaae894b3fe",
       "price": "23000",
-      "desc": "nguyen van dattt",
+      "desc": "2",
       "quantity": "8",
-      "slug": "ôi cuộc đời :((((((",
-      "id": 11
+      "slug": "ôi cuộc đời :(((((("
     },
     {
+      "id": 12,
       "name": "Áo mùa thu",
       "img": "https://cf.shopee.vn/file/8bd57cda68fc7a4a2076feaae894b3fe",
       "price": "23000",
-      "desc": "nguyen van dattt",
+      "desc": "2",
       "quantity": "8",
-      "slug": "ôi cuộc đời :((((((",
-      "id": 12
+      "slug": "ôi cuộc đời :(((((("
     },
     {
+      "id": 14,
       "name": "Áo mùa thu",
       "img": "https://cf.shopee.vn/file/8bd57cda68fc7a4a2076feaae894b3fe",
       "price": "23000",
-      "desc": "nguyen van dattt",
+      "desc": "1",
       "quantity": "8",
-      "slug": "ôi cuộc đời :((((((",
-      "id": 14
+      "slug": "ôi cuộc đời :(((((("
+    },
+    {
+      "id": 15,
+      "name": "11111",
+      "img": "http://res.cloudinary.com/vodinh/image/upload/v1638071945/txjinex7dkzccogo2lqx.png",
+      "price": "111",
+      "desc": "1",
+      "quantity": "11",
+      "slug": "1111"
     }
   ],
   "users": [
@@ -106,11 +115,11 @@
   "categorys": [
     {
       "id": 1,
-      "name": "Danh mục A"
+      "name": "Danh mục Dat"
     },
     {
-      "id": 1,
-      "name": "Danh mục B"
+      "id": 2,
+      "name": "Danh mục D2"
     }
   ]
 }
