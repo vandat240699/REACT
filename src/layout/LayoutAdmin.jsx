@@ -4,7 +4,7 @@ export default function LayoutAdmin() {
     <div>
       <ul className="layoutadmin" style={{ display: 'flex'}}>
         <li style={{ listStyleType: 'none', marginLeft: 40 }}>
-          <Link style={{textDecoration: 'none'}} to="/">TRANG CHỦ</Link>
+          <Link style={{textDecoration: 'none'}} to="/product">TRANG CHỦ</Link>
         </li>
         <li style={{ listStyleType: 'none', marginLeft: 40 }}>
           <Link style={{textDecoration: 'none'}} to="/admin">DASHBOARD</Link>
