@@ -70,9 +70,9 @@ const AddProduct = (props) => {
                 </div>
                 <div className="input-group mb-3" style={{ width: "60%", margin: "auto" }}>
                     <div className="input-group-prepend">
-                        <span className="input-group-text" id="basic-addon1">Slug</span>
+                        <span className="input-group-text" id="basic-addon1">Mô tả sản phẩm</span>
                     </div>
-                    <input {...register("slug")} type="text" id="slug" className="form-control" placeholder="Slug" aria-label="Username" required="required" aria-describedby="basic-addon1"></input>
+                    <input {...register("slug")} type="text" id="slug" className="form-control" placeholder="Mô tả sản phẩm" aria-label="Username" required="required" aria-describedby="basic-addon1"></input>
                 </div>
                 <button type="submit" id="btnSubmit" className="btn btn-primary">Thêm</button>
             </form>

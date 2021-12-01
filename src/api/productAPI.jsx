@@ -20,6 +20,10 @@ export const update = (products) => {
   const url = "/products/" + products.id;
   return instance.put(url, products);
 };
+export const lists = (params="") => {
+  const url = "/products?"+params;
+  return instance.get(url);
+};
 // GET /products => Hien thi danh sach
 // GET /products/:id => Chi tiet san pham
 // POST /products => Them san pham

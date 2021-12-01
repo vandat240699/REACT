@@ -8,9 +8,6 @@ export default function LayoutWebsite() {
           <Link style={{textDecoration: 'none'}}  to="/product">TRANG CHỦ</Link>
         </li>
         <li style={{listStyleType: 'none', marginLeft: 40}}>
-          <Link style={{textDecoration: 'none'}}  to="/product">PRODUCT</Link>
-        </li>
-        <li style={{listStyleType: 'none', marginLeft: 40}}>
           <Link style={{textDecoration: 'none'}} to="/admin">QUẢN TRỊ</Link>
         </li>
         <li style={{listStyleType: 'none', marginLeft: 40}}>

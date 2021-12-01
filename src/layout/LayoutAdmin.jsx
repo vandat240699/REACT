@@ -10,14 +10,14 @@ export default function LayoutAdmin() {
           <Link style={{textDecoration: 'none'}} to="/admin">DASHBOARD</Link>
         </li>
         <li style={{listStyleType: 'none', marginLeft: 40}}>
-          <Link style={{textDecoration: 'none'}} to="/admin/category">DANH MỤC</Link>
+          <Link style={{textDecoration: 'none'}} to="category">QUẢN TRỊ DANH MỤC</Link>
         </li>
         <li style={{ listStyleType: 'none', marginLeft: 40 }}>
           <Link style={{textDecoration: 'none'}} to="product">QUẢN TRỊ SẢN PHẨM</Link>
         </li>
-        <li style={{listStyleType: 'none', marginLeft: 40 }}>
+        {/* <li style={{listStyleType: 'none', marginLeft: 40 }}>
           <Link style={{textDecoration: 'none'}} to="product/add">THÊM SẢN PHẨM MỚI</Link>
-        </li>
+        </li> */}
       </ul>
       <Outlet />
     </div>

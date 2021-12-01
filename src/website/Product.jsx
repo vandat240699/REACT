@@ -13,7 +13,7 @@ const ProductWebsite = ({ data }) => {
                                 <h5 className="card-title">{item.name}</h5>
                                 <p className="card-text">{format(item.price)} đ</p>
                                 <p className="card-text">{item.slug}</p>
-                                <Link className="btn btn-primary" to={`${item.id}`}>Xem sản phẩm</Link>
+                                <Link className="btn btn-primary" to={`${"/product/"+item.id}`}>Xem sản phẩm</Link>
                             </div>
                         </div>
                     );

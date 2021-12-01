@@ -7,21 +7,7 @@ import { ToastContainer, toast } from "react-toastify";
 import ShowCategory from "../show/ShowCategory";
 import { listCategory } from "../api/categoryAPI";
 
-
-
 const EditProduct = (props) => {
-
-    // const onSubmit = async (data) => {
-
-    //     await UploadImage(data.img[0]).then((response) => {
-    //         data.img = response.url;
-    //     });
-    //     props.onUpdate({ id, ...data });
-    //     toast.success("Sửa thành công !", {
-    //         onClose: () => navigate("/admin/product/", { replace: true }),
-    //         autoClose: 500
-    //     });
-    // };
 
 
     const {
@@ -91,9 +77,9 @@ const EditProduct = (props) => {
                 </div>
                 <div className="input-group mb-3" style={{ width: "60%", margin: "auto" }}>
                     <div className="input-group-prepend">
-                        <span className="input-group-text" id="basic-addon1">Slug</span>
+                        <span className="input-group-text" id="basic-addon1">Mô tả sản phẩm</span>
                     </div>
-                    <input defaultValue={product.slug} {...register("slug")} type="text" id="slug" className="form-control" required="required" placeholder="Slug" aria-label="Username" aria-describedby="basic-addon1"></input>
+                    <input defaultValue={product.slug} {...register("slug")} type="text" id="slug" className="form-control" required="required" placeholder="Mô tả sản phẩm" aria-label="Username" aria-describedby="basic-addon1"></input>
                 </div>
                 <button type="submit" id="btnSubmit" className="btn btn-primary">Update</button>
             </form>
