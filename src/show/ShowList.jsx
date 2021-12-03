@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { listCategory } from "../api/categoryAPI";
+
 // import AddProduct from "../admin/AddProduct";
 
 export const format = num =>
     String(num).replace(/(?<!\..*)(\d)(?=(?:\d{3})+(?:\.|$))/g, '$1,');
 
 const ShowList = ({ data, removed, url }) => {
+    
     const [cate, setCate] = useState([]);
     useEffect(() => {
         listCategory().then(response => setCate(response.data))

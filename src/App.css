@@ -561,6 +561,10 @@ span.icon1, span.icon2{
 .layoutwebsite li{
 	line-height: 55px;
 }
+.layoutwebsite li img{
+	width: 33px;
+	margin-left:840px;
+}
 .layoutwebsite{
 	height: 55px;
 }
@@ -773,6 +777,16 @@ px
 .sanphamlienquan{
 	font-size:30px;
 	margin-top:30px;
+}
+.w-100{
+	width: 1200px !important;
+	height: 500px;
+	margin: auto;
+}
+.giaycaocap{
+	font-weight: bold !important;
+	font-size:30px;
+	color: red;
 }
 
 /* data =[1,2];

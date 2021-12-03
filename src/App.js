@@ -1,11 +1,13 @@
 import { ToastContainer, toast } from "react-toastify";
 import { Link, Outlet } from "react-router-dom";
+import Banner from "./layout/Banner";
 // import Data from './data/Data';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import ShowList from './show/ShowList';
 import './App.css';
 import { useEffect, useState } from 'react';
 import LayoutWebsite from './layout/LayoutWebsite';
+import LayoutWebsite2 from './layout/LayoutWebsite2';
 import LayoutAdmin from './layout/LayoutAdmin';
 import { create, list, remove, update } from './api/productAPI';
 import { createCate, listCategory, removecate, updatecate } from "./api/categoryAPI";
@@ -24,6 +26,7 @@ import 'antd/dist/antd.css';
 import Categoris from "./show/Categoris";
 import AddCategory from "./admin/AddCategory";
 import EditCategory from "./admin/EditCategory";
+import Swal from 'sweetalert2';
 // import RemoveProduct from "../admin/RemoveProduct";
 
 
@@ -56,20 +59,57 @@ function App() {
   // }
 
   function removeHandler(id) {
-    remove(id)
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        remove(id)
       .then(() => {
         list().then(response => setProduct(response.data))
       })
-    toast.success("Xóa thành công");
+      .then(() => {
+        Swal.fire(
+          'Deleted!',
+          'Your file has been deleted.',
+          'success'
+        )
+      })
+      }
+    })
   }
 
-  const removeCate = (id) => {
-    removecate(id)
-      .then(() => {
-        listCategory().then(response => setCategory(response.data))
-      })
-    toast.success("Xóa thành công");
 
+
+  const removeCate = (id) => {
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        removecate(id)
+        .then(() => {
+          listCategory().then(response => setCategory(response.data))
+        })
+        .then(() => {
+          Swal.fire(
+            'Deleted!',
+            'Your file has been deleted.',
+            'success'
+          )
+        })
+      }
+    })
   }
 
 
@@ -124,12 +164,12 @@ function App() {
         <BrowserRouter>
           <Routes>
             {/* GIao diện dành cho website */}
-            <Route path="/" element={<LayoutWebsite />}>
+            <Route path="/" element={<div><LayoutWebsite /> </div>}>
               {/* Mặc định khi truy cập / thì màn hình render ra home */}
               <Route path="/">
                 <Route index element={
                   <div>
-                    <div><ProductWebsite data={product} /></div>
+                    <div> <ProductWebsite data={product} /></div>
                     <div><Footer /></div>
                   </div>} />
               </Route>
@@ -142,14 +182,17 @@ function App() {
                   </div>
                 } />
               {/* khi truy cập /product/123 thì màn hình render ra component Product Detail */}
-              <Route path="product/:id" element={
-                <div>
-                  < ProductDetail />
-                  <Footer />
-                </div>} />
-              <Route path="signin" element={<div><Signin /> < Footer /></div>} />
-              <Route path="signup" element={<div><Signup /> < Footer /></div>} />
+
+
             </Route>
+            <Route path="signin" element={<div> <LayoutWebsite2 /><Signin /> < Footer /></div>} />
+            <Route path="signup" element={<div> <LayoutWebsite2 /><Signup /> < Footer /></div>} />
+            <Route path="product/:id" element={
+              <div>
+                <LayoutWebsite2 />
+                < ProductDetail />
+                <Footer />
+              </div>} />
             {/* Giao diện dành cho Admin */}
             <Route path="admin/*" element={
               <PrivateAdmin abc="123">
